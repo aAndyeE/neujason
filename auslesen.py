@@ -5,4 +5,14 @@ with open('tsjsonneu/accounts.json', 'r') as f:
     data = json.load(f)
     #print(json.dumps(data, indent=4))
 
-    print(data[1])
+eingabe = input('Was möchtest du tun?\n1 gib ;alter; ein für personen über 25 Jahre ')
+
+
+if eingabe == 'alter':
+
+    alter = x['age'] > 25
+
+    for x in data:
+        print(alter)
+        
+        
